@@ -1,0 +1,34 @@
+{
+  "standard-dialog": {
+    "attributes": [
+      "modelValue",
+      "title",
+      "width",
+      "persistent"
+    ],
+    "description": ""
+  },
+  "StandardDialog": {
+    "attributes": [
+      "modelValue",
+      "title",
+      "width",
+      "persistent"
+    ],
+    "description": ""
+  },
+  "standard-select": {
+    "attributes": [
+      "label",
+      "items"
+    ],
+    "description": ""
+  },
+  "StandardSelect": {
+    "attributes": [
+      "label",
+      "items"
+    ],
+    "description": ""
+  }
+}

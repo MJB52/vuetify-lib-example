@@ -1,0 +1,38 @@
+{
+  "standard-dialog/modelValue": {
+    "type": "boolean"
+  },
+  "StandardDialog/modelValue": {
+    "type": "boolean"
+  },
+  "standard-dialog/title": {
+    "type": "string"
+  },
+  "StandardDialog/title": {
+    "type": "string"
+  },
+  "standard-dialog/width": {
+    "type": "string"
+  },
+  "StandardDialog/width": {
+    "type": "string"
+  },
+  "standard-dialog/persistent": {
+    "type": "boolean"
+  },
+  "StandardDialog/persistent": {
+    "type": "boolean"
+  },
+  "standard-select/label": {
+    "type": "string"
+  },
+  "StandardSelect/label": {
+    "type": "string"
+  },
+  "standard-select/items": {
+    "type": "array"
+  },
+  "StandardSelect/items": {
+    "type": "array"
+  }
+}

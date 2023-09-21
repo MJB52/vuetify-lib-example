@@ -42,11 +42,6 @@ export default defineComponent({
       required: true,
       default: ''
     },
-    loading: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
     width: {
       type: String,
       required: false,

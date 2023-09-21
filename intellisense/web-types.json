@@ -1,0 +1,100 @@
+{
+  "framework": "vue",
+  "name": "vuetify-lib-example",
+  "version": "1.0.2",
+  "contributions": {
+    "html": {
+      "description-markup": "markdown",
+      "types-syntax": "typescript",
+      "tags": [
+        {
+          "name": "StandardDialog",
+          "description": "",
+          "attributes": [
+            {
+              "name": "modelValue",
+              "required": true,
+              "value": {
+                "kind": "expression",
+                "type": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "name": "title",
+              "required": true,
+              "value": {
+                "kind": "expression",
+                "type": "string"
+              },
+              "default": "''"
+            },
+            {
+              "name": "width",
+              "required": false,
+              "value": {
+                "kind": "expression",
+                "type": "string"
+              },
+              "default": "''"
+            },
+            {
+              "name": "persistent",
+              "value": {
+                "kind": "expression",
+                "type": "boolean"
+              },
+              "default": "true"
+            }
+          ],
+          "events": [
+            {
+              "name": "update:modelValue"
+            }
+          ],
+          "slots": [
+            {
+              "name": "header"
+            },
+            {
+              "name": "content"
+            },
+            {
+              "name": "footer"
+            }
+          ],
+          "source": {
+            "module": "./src/components/StandardDialog.vue",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "StandardSelect",
+          "description": "",
+          "attributes": [
+            {
+              "name": "label",
+              "value": {
+                "kind": "expression",
+                "type": "string"
+              },
+              "default": "undefined"
+            },
+            {
+              "name": "items",
+              "required": true,
+              "value": {
+                "kind": "expression",
+                "type": "MyItem[]"
+              }
+            }
+          ],
+          "source": {
+            "module": "./src/components/StandardSelect.vue",
+            "symbol": "default"
+          }
+        }
+      ]
+    }
+  }
+}
