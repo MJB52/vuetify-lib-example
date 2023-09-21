@@ -1,7 +1,7 @@
 {
   "framework": "vue",
   "name": "vuetify-lib-example",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "contributions": {
     "html": {
       "description-markup": "markdown",
