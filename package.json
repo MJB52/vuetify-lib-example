@@ -1,6 +1,6 @@
 {
   "name": "vuetify-lib-example",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Component library that wraps vuetify components to demonstrate a potential issue",
   "exports": {
     ".": {
