@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"[vue]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		 },
+		 "[html]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		 },
+		 "[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		 },
+		 "[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		 },
+		 "editor.formatOnSave": true,
+		 "vetur.experimental.templateInterpolationService": true,
+		 "vetur.validation.templateProps": true,
+		 "html.format.wrapAttributes": "force-aligned",
+		 "prettier.jsxBracketSameLine": true
+	},
+	"extensions": {
+		"recommendations": [
+			"esbenp.prettier-vscode",
+			"dbaeumer.vscode-eslint",
+		]
+	}
+}

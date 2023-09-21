@@ -1,0 +1,33 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.dom.json",
+    "include": ["env.d.ts",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.vue"],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "lib": ["ESNext", "DOM"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "declaration": true,
+        "declarationMap": true,
+        "outDir": "dist",
+        "declarationDir": "dist",
+        "skipLibCheck": true,
+        "noEmit": false,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "noImplicitAny": false,
+        "types": ["node","vuetify"]
+    },
+
+    "references": [
+        {
+            "path": "./tsconfig.config.json"
+        }
+    ]
+}
