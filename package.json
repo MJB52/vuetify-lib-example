@@ -1,11 +1,17 @@
 {
   "name": "vuetify-lib-example",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Component library that wraps vuetify components to demonstrate a potential issue",
+  "main": "./dist/lib.umd.js",
+  "module": "./dist/lib.es.js",
   "exports": {
     ".": {
       "import": "./dist/lib.es.js",
       "require": "./dist/lib.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     },
     "./style.css": {
       "import": "./dist/style.css",
@@ -16,9 +22,8 @@
       "require": "./dist/style.css"
     }
   },
-  "main": "dist/lib.umd.js",
-  "module": "dist/lib.es.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
+  "type": "module",
   "files": [
     "dist/*",
     "intellisense/*"
@@ -29,7 +34,7 @@
     "lint": "eslint --ext .js,.vue,.ts src",
     "lint:fix": "eslint --ext .js,.vue,.ts src --fix",
     "rebuild": "npm run build",
-    "type-check": "vue-tsc --emitDeclarationOnly --outDir dist",
+    "type-check": "vue-tsc",
     "generate-intellisense": "run-p vetur web-types",
     "vetur": "vue-int --input .\\src\\components\\ --output intellisense --recursive",
     "web-types": "vue-docgen-web-types"
@@ -50,19 +55,21 @@
     "eslint": "^8.45.0",
     "eslint-plugin-vue": "^9.15.1",
     "jsdom": "^22.1.0",
+    "minimist": "~1.2.8",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.35.0",
     "typescript": "~5.1.6",
     "vite": "^4.4.6",
+    "vite-plugin-compression": "~0.5.1",
+    "vite-plugin-dts": "^3.5.4",
     "vite-plugin-vuetify": "^1.0.0",
     "vitest": "^0.33.0",
     "vue": "^3.3.4",
     "vue-docgen-web-types": "~0.1.8",
     "vue-intellisense": "~1.0.1",
     "vue-tsc": "^1.8.6",
-    "vuetify": "^3.3.17",
-    "vite-plugin-compression": "~0.5.1",
-    "minimist": "~1.2.8"
+    "vuetify": "^3.3.17"
   },
   "peerDependencies": {
     "vue": "^3.3.4",
