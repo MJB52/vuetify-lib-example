@@ -28,7 +28,7 @@ export default defineConfig({
     //required or vite build overwrites vue-tsc declarations
     emptyOutDir: false,
     rollupOptions: {
-      external: ['vue', 'vuetify'],
+      external: ['vue', /^vuetify(\/.*)?$/],
       output: {
         assetFileNames: (assetInfo) => {
           if (assetInfo.name === 'index.css') return 'style.css';
